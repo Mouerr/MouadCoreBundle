@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Region
  *
  * @ORM\Table(name="tf_regions", indexes={@ORM\Index(name="tf_regions_clients_account_id_index", columns={"clients_account_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Mouad\CoreBundle\Repository\CoreRegionRepository")
  */
 class Region
 {
