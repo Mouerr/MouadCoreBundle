@@ -1,5 +1,6 @@
 {
   "name": "mouad/core-bundle",
+  "version": "1.0.0",
   "type": "symfony-bundle",
   "description": "a core bundle test",
   "minimum-stability": "stable",
