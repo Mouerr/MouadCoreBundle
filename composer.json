@@ -1,0 +1,31 @@
+{
+  "name": "mouad/core-bundle",
+  "type": "symfony-bundle",
+  "description": "a core bundle test",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "MouadErrahmouni",
+      "email": "mouad@tousfacteurs.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "symfony/http-kernel": "^5.4"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mouad\\CoreBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mouad\\CoreBundle\\Tests\\": "tests/"
+    }
+  }
+}
