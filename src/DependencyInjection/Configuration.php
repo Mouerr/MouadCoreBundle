@@ -12,12 +12,11 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('mouad_core');
         $rootNode = $treeBuilder->getRootNode();
-        /*$rootNode
+        $rootNode
             ->children()
-            ->booleanNode('unicorns_are_real')->defaultTrue()->end()
-            ->integerNode('min_sunshine')->defaultValue(3)->end()
+            ->variableNode('core_region_repository')
             ->end()
-        ;*/
+        ;
         return $treeBuilder;
     }
 }

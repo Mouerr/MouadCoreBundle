@@ -6,6 +6,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Reference;
 
 class MouadCoreBundleExtension extends Extension
 {
@@ -17,8 +18,8 @@ class MouadCoreBundleExtension extends Extension
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
         $definition = $container->getDefinition('mouad_core.core_region_repository');
-        if (null !== $config['doctrine']) {
-            $definition->setArgument(0, new Reference($config['doctrine']));
+        if (null !== $config['core_region_repository']) {
+            $definition->setArgument(0, new Reference($config['core_region_repository']));
         }
     }
 
