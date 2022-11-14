@@ -8,5 +8,9 @@
         <service id="mouad_core.core_region_repository" class="Mouad\CoreBundle\Repository\CoreRegionRepository" public="true">
             <argument key="$registry" type="service" id="doctrine"/>
         </service>
+
+        <service id="Mouad\CoreBundle\Service\Region" class="Mouad\CoreBundle\Service\Region" public="true">
+            <argument key="$repository" type="service" id="mouad_core.core_region_repository"/>
+        </service>
     </services>
 </container>
